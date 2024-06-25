@@ -3,10 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* apply workhouose font */
+
+body {
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.6;
+}
 
 header {
-  background-color: #6c6565;
-  background-image: linear-gradient(to right, #959595, #6c6565, #929292);
+  background-color: #2e6d9a;
+  background-image: linear-gradient(to right, #577e98, #267192, #577e98);
   color: white;
   padding: 1rem;
   text-align: center;
@@ -23,18 +29,18 @@ header {
 }
 
 .container ul li {
-  padding: 4px 8px;
-  border-top: 2px solid #afa9a9;
+  padding: 0.3rem 1rem;
+  border-top: 2px solid #3c87b2;
   margin: 4px;
   font-weight: bold;
   background-color: #f4f4f4;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to bottom,
-    #efecec,
-    #ffffff,
-    #ffffff,
+    #e0e4ea,
+    #dadcde,
+    #dcdada,
     #ffffff
-  );
+  ); */
   font-size: 1.1rem;
 }
 
@@ -43,7 +49,7 @@ header {
 }
 
 .container a {
-  color: #585858;
+  color: #13515b;
 }
 .container a:hover {
   color: #555555;
@@ -51,18 +57,28 @@ header {
 }
 
 footer {
-  background-color: #333;
+  background-color: #013046;
   color: white;
   padding: 1rem;
-  text-align: right;
+  display: flex;
+  justify-content: space-between;
 }
 
-footer a {
+.other-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.head-links {
+  font-weight: 600;
+}
+
+.footer-link {
   color: white;
   text-decoration: none;
 }
 
-footer a:hover {
+.footer-link:hover {
   color: #d3d3d3;
   text-decoration: underline;
 }
